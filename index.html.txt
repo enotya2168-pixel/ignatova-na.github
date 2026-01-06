@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игнатова Наталия Александровна | Учитель информатики и математики | Участник конкурса "Учитель года 2026"</title>
+    <meta name="description" content="Сайт-портфолио Игнатовой Наталии Александровны, учителя информатики и математики МБОУ 'Новолядинская СОШ', участницы конкурса Учитель года 2026. Методические материалы, проекты, олимпиады Сириус.">
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* СБРОС СТИЛЕЙ И БАЗОВЫЕ НАСТРОЙКИ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --tech-color: #9b59b6;
+            --math-color: #2ecc71;
+            --teacher-color: #f39c12;
+            --parent-color: #1abc9c;
+            --student-color: #3498db;
+            --light-color: #f9f9f9;
+            --text-color: #333;
+            --gray-color: #555;
+        }
+
+        body {
+            color: var(--text-color);
+            background-color: var(--light-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--tech-color), var(--math-color));
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: var(--gray-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-tech {
+            background: var(--tech-color);
+            border-color: var(--tech-color);
+        }
+
+        .btn-tech:hover {
+            background: #8e44ad;
+        }
+
+        .btn-math {
+            background: var(--math-color);
+            border-color: var(--math-color);
+        }
+
+        .btn-math:hover {
+            background: #27ae60;
+        }
+
+        .btn-teacher {
+            background: var(--teacher-color);
+        }
+
+        .btn-teacher:hover {
+            background: #e67e22;
+        }
+
+        .btn-parent {
+            background: var(--parent-color);
+        }
+
+        .btn-parent:hover {
+            background: #16a085;
+        }
+
+        .btn-student {
+            background: var(--student-color);
+        }
+
+        .btn-student:hover {
+            background: #2980b9;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        /* ШАПКА И ГЛАВНЫЙ ЭКРАН */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a2530 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(155, 89, 182, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(46, 204, 113, 0.1) 0%, transparent 50%);
+        }
+
+        .header-content {
+            z-index: 2;
+            position: relative;
+        }
+
+        .header-content h1 {
+            color: white;
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .header-content .subtitle {
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .school-info {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .subject-badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .badge-tech {
+            background: var(--tech-color);
+        }
+
+        .badge-math {
+            background: var(--math-color);
+        }
+
+        .badge-sirius {
+            background: #e74c3c;
+        }
+
+        .header-content p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .header-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* НАВИГАЦИЯ */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 20px 0;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.98);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: color 0.3s;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--tech-color), var(--math-color));
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        /* СЕКЦИЯ "ПЕДАГОГИЧЕСКИЙ КОД" */
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .principle-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--secondary-color);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .principle-card.tech {
+            border-top-color: var(--tech-color);
+        }
+
+        .principle-card.math {
+            border-top-color: var(--math-color);
+        }
+
+        .principle-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .principle-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .principle-card.tech .principle-icon {
+            color: var(--tech-color);
+        }
+
+        .principle-card.math .principle-icon {
+            color: var(--math-color);
+        }
+
+        /* СЕКЦИЯ "ОБРАЗОВАТЕЛЬНЫЙ ХАБ" */
+        .audience-section {
+            background: #f8f9fa;
+        }
+
+        .audience-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .audience-tab-btn {
+            padding: 15px 30px;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .audience-tab-btn.active {
+            border-color: var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .audience-tab-btn.teachers.active {
+            border-color: var(--teacher-color);
+            background: rgba(243, 156, 18, 0.1);
+        }
+
+        .audience-tab-btn.parents.active {
+            border-color: var(--parent-color);
+            background: rgba(26, 188, 156, 0.1);
+        }
+
+        .audience-tab-btn.students.active {
+            border-color: var(--student-color);
+            background: rgba(52, 152, 219, 0.1);
+        }
+
+        .audience-content {
+            display: none;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .audience-content.active {
+            display: block;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .resource-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .resource-card.teachers {
+            border-left-color: var(--teacher-color);
+        }
+
+        .resource-card.parents {
+            border-left-color: var(--parent-color);
+        }
+
+        .resource-card.students {
+            border-left-color: var(--student-color);
+        }
+
+        /* СЕКЦИЯ "IT-ЛАБОРАТОРИЯ" */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card-content {
+            padding: 20px;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            background: var(--tech-color);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        .robot-tag {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* СЕКЦИЯ "ПОБЕДЫ И ОТКРЫТИЯ" */
+        .achievements {
+            background: #f0f7ff;
+        }
+
+        .sirius-highlight {
+            text-align: center;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .sirius-highlight i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .winners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .winner-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #e74c3c;
+        }
+
+        .winner-card h4 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .winner-card .achievement {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* СЕКЦИЯ "ДИАЛОГ" */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            color: var(--secondary-color);
+            margin-top: 3px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        /* ПОДВАЛ */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo span {
+            color: var(--secondary-color);
+        }
+
+        /* АДАПТИВНОСТЬ */
+        @media (max-width: 992px) {
+            h1 { font-size: 2.5rem; }
+            .header-content h1 { font-size: 2.8rem; }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            .header-content h1 { font-size: 2.2rem; }
+            .header-content .subtitle { font-size: 1.3rem; }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .header-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project-grid,
+            .winners-grid,
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .audience-tab-btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section { padding: 60px 0; }
+            .container { padding: 0 15px; }
+            .btn { padding: 12px 25px; }
+            .subject-badges { gap: 10px; }
+            .badge { padding: 6px 12px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- НАВИГАЦИЯ -->
+    <nav id="mainNav">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>Н.А. Игнатова</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#philosophy">Педагогический код</a></li>
+                <li><a href="#hub">Образовательный хаб</a></li>
+                <li><a href="#methods">IT-лаборатория</a></li>
+                <li><a href="#achievements">Достижения</a></li>
+                <li><a href="#contact">Диалог</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <header id="home">
+        <div class="container header-content">
+            <h1>Игнатова Наталия Александровна</h1>
+            <div class="subtitle">Учитель информатики и математики</div>
+            <div class="school-info">
+                <i class="fas fa-school"></i> МБОУ "Новолядинская СОШ", Тамбовская область
+            </div>
+            <div class="subject-badges">
+                <span class="badge badge-tech"><i class="fas fa-code"></i> Информатика</span>
+                <span class="badge badge-math"><i class="fas fa-calculator"></i> Математика</span>
+                <span class="badge badge-sirius"><i class="fas fa-graduation-cap"></i> Сириус</span>
+                <span class="badge" style="background: var(--teacher-color);"><i class="fas fa-robot"></i> Робототехника</span>
+            </div>
+            <p>Участник конкурса "Учитель года 2026". Развиваю цифровые компетенции учеников в сельской школе. Готовлю победителей олимпиад "Сириус" и создаю условия для IT-творчества каждого ребёнка.</p>
+            <div class="header-btns">
+                <a href="#hub" class="btn btn-tech">Образовательный хаб</a>
+                <a href="#methods" class="btn btn-math">IT-лаборатория</a>
+                <a href="#achievements" class="btn" style="background: #e74c3c;">Олимпиады Сириус</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- СЕКЦИЯ "ПЕДАГОГИЧЕСКИЙ КОД" -->
+    <section id="philosophy">
+        <div class="container">
+            <h2>Мой педагогический код</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Индивидуальный подход и современные технологии — ключ к успеху каждого ученика, даже в условиях сельской школы.</p>
+            
+            <div class="principles-grid">
+                <div class="principle-card tech">
+                    <div class="principle-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Доступное IT-образование</h3>
+                    <p>Создаю условия для изучения программирования и робототехники независимо от местоположения школы. Использую дистанционные платформы и открытые ресурсы.</p>
+                    <a href="#methods" class="btn btn-tech" style="margin-top: auto;">Наши ресурсы</a>
+                </div>
+                
+                <div class="principle-card math">
+                    <div class="principle-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Практическая математика</h3>
+                    <p>Показываю, как математика работает в программировании, анализе данных, робототехнике. Учу решать реальные задачи через математические модели.</p>
+                    <a href="#methods" class="btn btn-math" style="margin-top: auto;">Примеры задач</a>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Работа с одарёнными</h3>
+                    <p>Системная подготовка к олимпиадам "Сириус". Выявление и развитие талантов через проектную деятельность и индивидуальные траектории.</p>
+                    <a href="#achievements" class="btn" style="margin-top: auto;">Наши победители</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ "ОБРАЗОВАТЕЛЬНЫЙ ХАБ" -->
+    <section id="hub" class="audience-section">
+        <div class="container">
+            <h2>Образовательный хаб</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Ресурсы и материалы для разных участников образовательного процесса</p>
+            
+            <div class="audience-tabs">
+                <button class="audience-tab-btn teachers active" data-audience="teachers">
+                    <i class="fas fa-chalkboard-teacher"></i> Коллегам-учителям
+                </button>
+                <button class="audience-tab-btn parents" data-audience="parents">
+                    <i class="fas fa-users"></i> Родителям
+                </button>
+                <button class="audience-tab-btn students" data-audience="students">
+                    <i class="fas fa-user-graduate"></i> Ученикам
+                </button>
+            </div>
+            
+            <div id="teachers-content" class="audience-content active">
+                <h3>Методические материалы и рекомендации</h3>
+                <p>Делюсь опытом организации IT-образования в сельской школе, подготовки к олимпиадам и интеграции робототехники в учебный процесс.</p>
+                
+                <div class="resources-grid">
+                    <div class="resource-card teachers">
+                        <h4><i class="fas fa-download"></i> Методические разработки</h4>
+                        <p>Конспекты уроков по программированию на Python, рабочие программы по робототехнике, сценарии IT-недель.</p>
+                        <a href="#" class="btn btn-teacher">Скачать материалы</a>
+                    </div>
+                    
+                    <div class="resource-card teachers">
+                        <h4><i class="fas fa-video"></i> Вебинары и мастер-классы</h4>
+                        <p>Записи вебинаров по подготовке к олимпиадам "Сириус", организации проектной деятельности, использованию конструкторов Lego Mindstorms.</p>
+                        <a href="#" class="btn btn-teacher">Смотреть записи</a>
+                    </div>
+                    
+                    <div class="resource-card teachers">
+                        <h4><i class="fas fa-handshake"></i> Сетевые проекты</h4>
+                        <p>Предложения по сотрудничеству в межшкольных IT-проектах, обмен опытом с коллегами из других регионов.</p>
+                        <a href="#" class="btn btn-teacher">Присоединиться</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="parents-content" class="audience-content">
+                <h3>Советы и помощь родителям</h3>
+                <p>Как поддержать ребёнка в изучении информатики и математики, подготовке к олимпиадам и выборе IT-профессии.</p>
+                
+                <div class="resources-grid">
+                    <div class="resource-card parents">
+                        <h4><i class="fas fa-child"></i> Развитие цифровой грамотности</h4>
+                        <p>Рекомендации по безопасному использованию компьютера, подбор образовательных ресурсов, возрастные особенности изучения программирования.</p>
+                        <a href="#" class="btn btn-parent">Читать рекомендации</a>
+                    </div>
+                    
+                    <div class="resource-card parents">
+                        <h4><i class="fas fa-trophy"></i> Подготовка к олимпиадам</h4>
+                        <p>Как помочь ребёнку участвовать в олимпиадах "Сириус", какие ресурсы использовать для подготовки, как справляться со стрессом.</p>
+                        <a href="#" class="btn btn-parent">Узнать больше</a>
+                    </div>
+                    
+                    <div class="resource-card parents">
+                        <h4><i class="fas fa-robot"></i> Робототехника дома</h4>
+                        <p>Обзор доступных конструкторов для домашнего использования, онлайн-курсы по робототехнике, DIY-проекты для семьи.</p>
+                        <a href="#" class="btn btn-parent">Выбрать конструктор</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="students-content" class="audience-content">
+                <h3>Ресурсы для учеников</h3>
+                <p>Всё для самостоятельного изучения программирования, подготовки к олимпиадам и развития IT-навыков.</p>
+                
+                <div class="resources-grid">
+                    <div class="resource-card students">
+                        <h4><i class="fas fa-code"></i> Онлайн-курсы и платформы</h4>
+                        <p>Подборка бесплатных курсов по Python, JavaScript, алгоритмам. Регистрация на образовательные платформы с моей поддержкой.</p>
+                        <a href="#" class="btn btn-student">Начать учиться</a>
+                    </div>
+                    
+                    <div class="resource-card students">
+                        <h4><i class="fas fa-puzzle-piece"></i> Задачи для подготовки</h4>
+                        <p>Банк задач для подготовки к олимпиадам "Сириус", разборы решений, тренировочные контесты по информатике и математике.</p>
+                        <a href="#" class="btn btn-student">Решать задачи</a>
+                    </div>
+                    
+                    <div class="resource-card students">
+                        <h4><i class="fas fa-project-diagram"></i> Проектные идеи</h4>
+                        <p>Темы для индивидуальных и групповых проектов по программированию и робототехнике. Возможность консультаций по реализации.</p>
+                        <a href="#" class="btn btn-student">Выбрать проект</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ "IT-ЛАБОРАТОРИЯ" -->
+    <section id="methods" style="background: #f5f5f5;">
+        <div class="container">
+            <h2>IT-лаборатория: программирование и робототехника</h2>
+            <p style="text-align: center; margin-bottom: 30px;">Практические направления работы с учениками Новолядинской СОШ</p>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Программирование на Python">
+                    <div class="project-card-content">
+                        <span class="tech-tag">Python</span>
+                        <h4>Основы программирования</h4>
+                        <p>Изучение Python с 5 класса через решение практических задач: создание игр, анализ данных, автоматизация процессов.</p>
+                        <p><strong>Уровни:</strong> Начальный (5-6 кл.), Базовый (7-8 кл.), Продвинутый (9-11 кл.)</p>
+                        <a href="#" class="btn btn-tech">Примеры кода</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Робототехника">
+                    <div class="project-card-content">
+                        <span class="robot-tag">Robotics</span>
+                        <h4>Основы робототехники</h4>
+                        <p>Работа с конструкторами Lego Mindstorms и Arduino. Создание программируемых роботов, участие в соревнованиях.</p>
+                        <p><strong>Оборудование:</strong> Lego Mindstorms EV3, Arduino Uno, 3D-принтер</p>
+                        <a href="#" class="btn" style="background: #e74c3c;">Фото работ</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Веб-разработка">
+                    <div class="project-card-content">
+                        <span class="tech-tag">Web Development</span>
+                        <h4>Создание сайтов</h4>
+                        <p>Изучение HTML, CSS, JavaScript. Разработка сайтов для школьных проектов и местных организаций.</p>
+                        <p><strong>Проекты:</strong> Сайт школьного музея, портал для фермеров, блоги учеников</p>
+                        <a href="#" class="btn btn-tech">Демо проектов</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ "ПОБЕДЫ И ОТКРЫТИЯ" -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2>Достижения учеников</h2>
+            
+            <div class="sirius-highlight">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Олимпиады на платформе "Сириус"</h3>
+                <p>Системная подготовка и участие в олимпиадах Образовательного центра "Сириус"</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>42</h3>
+                    <p>Участников олимпиад "Сириус" за 3 года</p>
+                </div>
+                <div class="stat-item">
+                    <h3>8</h3>
+                    <p>Победителей и призёров регионального этапа</p>
+                </div>
+                <div class="stat-item">
+                    <h3>3</h3>
+                    <p>Участника заключительного этапа</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Рост участия за последние 2 года</p>
+                </div>
+            </div>
+            
+            <h3 style="text-align: center; margin-top: 40px;">Наши победители и призёры</h3>
+            
+            <div class="winners-grid">
+                <div class="winner-card">
+                    <h4>Иванов Максим, 10 класс</h4>
+                    <p><strong>Достижения:</strong></p>
+                    <div class="achievement">Призёр регионального этапа олимпиады "Сириус" по информатике (2024)</div>
+                    <div class="achievement">Участник проектной смены "Большие вызовы" (2023)</div>
+                    <div class="achievement">Автор проекта "Автоматизация теплицы на Arduino"</div>
+                </div>
+                
+                <div class="winner-card">
+                    <h4>Петрова Анна, 9 класс</h4>
+                    <p><strong>Достижения:</strong></p>
+                    <div class="achievement">Победитель муниципального этапа олимпиады "Сириус" по математике (2025)</div>
+                    <div class="achievement">Призёр конкурса "IT-проекты для села"</div>
+                    <div class="achievement">Разработчик образовательного сайта для младших классов</div>
+                </div>
+                
+                <div class="winner-card">
+                    <h4>Сидоров Дмитрий, 11 класс</h4>
+                    <p><strong>Достижения:</strong></p>
+                    <div class="achievement">Участник заключительного этапа олимпиады "Сириус" по информатике (2024)</div>
+                    <div class="achievement">Победитель хакатона "Цифровое село"</div>
+                    <div class="achievement">Создатель мобильного приложения для школьного расписания</div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <h4>Система подготовки к олимпиадам:</h4>
+                <p>• Индивидуальные консультации • Дистанционные курсы "Сириус.Курсы" • Летние IT-интенсивы • Решение задач прошлых лет • Психологическая подготовка</p>
+                <a href="#contact" class="btn" style="background: #e74c3c; margin-top: 20px;">Узнать о подготовке</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ "ДИАЛОГ" -->
+    <section id="contact">
+        <div class="container">
+            <h2>Связь и сотрудничество</h2>
+            <p style="text-align: center; margin-bottom: 50px;">Открыта для общения с коллегами, родителями и учениками. Готова помочь с организацией IT-образования в сельских школах.</p>
+            
+            <div class="contact-container">
+                <div>
+                    <h3>Написать сообщение</h3>
+                    <p>Есть вопросы по подготовке к олимпиадам, организации IT-кружка или использованию конструкторов? Напишите мне.</p>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Ваш email" required>
+                        <select style="width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px;">
+                            <option value="">Кто вы?</option>
+                            <option value="teacher">Коллега-учитель</option>
+                            <option value="parent">Родитель</option>
+                            <option value="student">Ученик</option>
+                            <option value="other">Другое</option>
+                        </select>
+                        <textarea placeholder="Ваше сообщение..." required></textarea>
+                        <button type="submit" class="btn btn-tech">Отправить сообщение</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h3>Контакты и информация</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-school"></i> <strong>Школа:</strong> МБОУ "Новолядинская СОШ", Тамбовская область</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> с. Новая Ляда, ул. Школьная, 1</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> n.ignatova@novolyadinskaya.ru</p>
+                        <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> +7 (XXX) XXX-XX-XX</p>
+                        <p><i class="fas fa-graduation-cap"></i> <strong>Олимпиадная подготовка:</strong> "Сириус", ВсОШ, перечневые олимпиады</p>
+                        <p><i class="fas fa-code"></i> <strong>Направления:</strong> Python, робототехника, веб-разработка, алгоритмы</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="#" title="Telegram-канал"><i class="fab fa-telegram"></i></a>
+                        <a href="#" title="YouTube с уроками"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="Сайт школы"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Игнатова Наталия Александровна</div>
+            <p>Учитель информатики и математики МБОУ "Новолядинская СОШ" | Участник конкурса "Учитель года 2026"</p>
+            <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">Сайт создан как образовательный ресурс для учителей, родителей и учеников. © 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Изменение навигации при скролле
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Табы в разделе "Образовательный хаб"
+        const audienceBtns = document.querySelectorAll('.audience-tab-btn');
+        const audienceContents = document.querySelectorAll('.audience-content');
+        
+        audienceBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Убираем активный класс у всех кнопок и контента
+                audienceBtns.forEach(b => b.classList.remove('active'));
+                audienceContents.forEach(c => c.classList.remove('active'));
+                
+                // Активируем текущую
+                btn.classList.add('active');
+                const audience = btn.getAttribute('data-audience');
+                document.getElementById(audience + '-content').classList.add('active');
+            });
+        });
+
+        // Плавная прокрутка для навигации
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Обработка формы
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за ваше сообщение! Я свяжусь с вами в ближайшее время.');
+            this.reset();
+        });
+
+        // Автоматическое переключение табов при наведении (опционально)
+        document.querySelectorAll('.audience-tab-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                if (!this.classList.contains('active')) {
+                    this.style.transform = 'translateY(-3px)';
+                }
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = '';
+            });
+        });
+    </script>
+</body>
+</html>
